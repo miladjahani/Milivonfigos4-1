@@ -9,9 +9,9 @@ BRAND = "miliconfig"
 # Production requires a durable storage binding for administrator setup and data.
 # Create a D1 database in Cloudflare and bind it as DB in the dashboard, or uncomment
 # the following block and replace the placeholders with your own database information.
-# [[d1_databases]]
-# binding = "DB"
-# database_name = "miliconfig-db"
-# database_id = "YOUR-D1-DATABASE-UUID"
+ [[d1_databases]]
+ binding = "DB"
+ database_name = "miliconfig"
+ database_id = "acaa30d4-88d6-44d9-9f6c-892cf727f76e"
 
 # Never put Cloudflare API tokens, administrator passwords, or other secrets in this file.
