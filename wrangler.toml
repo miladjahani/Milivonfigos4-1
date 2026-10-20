@@ -1,0 +1,17 @@
+# MiliconfigOS v4.0 — Cloudflare Workers deployment configuration
+name = "miliconfig"
+main = "src/index.js"
+compatibility_date = "2024-09-23"
+
+[vars]
+BRAND = "miliconfig"
+
+# Production requires a durable storage binding for administrator setup and data.
+# Create a D1 database in Cloudflare and bind it as DB in the dashboard, or uncomment
+# the following block and replace the placeholders with your own database information.
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "miliconfig-db"
+# database_id = "YOUR-D1-DATABASE-UUID"
+
+# Never put Cloudflare API tokens, administrator passwords, or other secrets in this file.

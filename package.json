@@ -1,0 +1,26 @@
+{
+  "name": "miliconfig",
+  "version": "4.0.0",
+  "description": "miliconfig v4.0 - Multi-user Cloudflare Workers & Pages Proxy Control Center with D1 Database & Advanced Obfuscation",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "obfuscate": "node scripts/build.js --obfuscate",
+    "test": "node scripts/test-worker.js",
+    "deploy:worker": "wrangler deploy",
+    "deploy:pages": "npm run build && wrangler pages deploy dist"
+  },
+  "keywords": [
+    "miliconfig",
+    "cloudflare-workers",
+    "cloudflare-pages",
+    "cloudflare-d1",
+    "vless",
+    "trojan",
+    "xhttp",
+    "ech"
+  ],
+  "author": "miliconfig",
+  "license": "MIT"
+}

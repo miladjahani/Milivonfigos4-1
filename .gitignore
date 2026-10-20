@@ -1,0 +1,16 @@
+# Secrets and local development values
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+
+# Local tooling / dependencies
+node_modules/
+.wrangler/
+coverage/
+*.log
+.DS_Store
+
+# Local readable debug bundles are never deployment assets
+.build/
